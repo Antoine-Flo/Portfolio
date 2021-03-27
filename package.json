@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dart": "sass sass/main.scss styles.css --watch"
+    "sass": "sass sass/main.scss styles.css --watch"
   },
   "keywords": [],
   "author": "",
