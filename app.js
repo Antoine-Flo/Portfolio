@@ -12,7 +12,7 @@ header.addEventListener('mousemove', (e) => {
 
     let light = Math.floor(10 * y) + 50;
 
-    let backgroundHue = Math.floor(50 * x) + 170;
+    let backgroundHue = Math.floor(30 * x) + 165;
     let titleHue = backgroundHue + 120;
 
 
