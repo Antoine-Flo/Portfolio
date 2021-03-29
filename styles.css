@@ -152,7 +152,7 @@ body {
   height: auto;
   width: 20px;
   position: absolute;
-  left: 4rem;
+  right: 4rem;
   top: 0;
 }
 .icons::before {
@@ -170,6 +170,10 @@ body {
 }
 .icons__icon:hover {
   opacity: 0.2;
+}
+
+.header-wrapper {
+  width: 100%;
 }
 
 .header {
