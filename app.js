@@ -1,6 +1,5 @@
-const header = document.querySelector(".header-wrapper")
-const title  = document.querySelector(".header__name")
-
+const titles = document.querySelectorAll(".header__title");
+const header = document.querySelector(".header-wrapper");
 
 
 header.addEventListener('mousemove', (e) => {
@@ -10,16 +9,13 @@ header.addEventListener('mousemove', (e) => {
     let x = e.clientX / headerWidth;
     let y = e.clientY / headerHeight;
 
-    let light = Math.floor(10 * y) + 50;
+    let deg = Math.floor(50 * y) + 100;
+    let perc = Math.floor(50 * x) + 20;
 
-    let backgroundHue = Math.floor(30 * x) + 165;
-    let titleHue = backgroundHue + 120;
+    titles.forEach(title => {
+        title.style.background = `-webkit-linear-gradient(${deg}deg, #00F260 ${perc}% , #0575E6)`
+        title.style.webkitBackgroundClip = "text";
+        title.style.webkitTextFillColor = "transparent";
+    })
 
-
-    console.log(light);
-
-    header.style.backgroundColor = `hsl(${backgroundHue}, 50%, ${light}%)`
-    title.style.color = `hsl(${titleHue}, ${light}%, 50%)`
 })
-
-

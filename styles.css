@@ -6,7 +6,7 @@
 }
 
 html {
-  --background-read: #eeebdd;
+  --background-read: hsl(50, 51%, 95%);
   --font-read: #40394a;
   --main-green: #007580;
   --main-light-green: #ccffbd;
@@ -108,7 +108,7 @@ input, select {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .heading-1 {
@@ -117,6 +117,7 @@ body {
 
 .heading-2 {
   font-size: 2.4rem;
+  font-weight: 200;
 }
 
 .heading-3 {
@@ -159,12 +160,13 @@ body {
   margin: 0 auto;
   display: block;
   content: "";
-  background-color: black;
+  background-color: white;
   width: 1px;
   height: 70px;
   margin-bottom: 2px;
 }
 .icons__icon {
+  fill: white;
   margin-top: 20px;
   transition: all 0.2s;
 }
@@ -174,13 +176,22 @@ body {
 
 .header-wrapper {
   width: 100%;
+  background-color: #35363A;
 }
 
 .header {
   padding: 10rem 0;
 }
+.header__title {
+  font-family: "Comfortaa", cursive;
+  font-size: 110px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .header__bio {
+  color: white;
   margin-top: 30px;
+  opacity: 0.65;
 }
 
 .home {
