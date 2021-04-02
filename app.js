@@ -10,7 +10,7 @@ header.addEventListener('mousemove', (e) => {
     let y = e.clientY / headerHeight;
 
     let deg = Math.floor(50 * y) + 100;
-    let perc = Math.floor(50 * x) + 20;
+    let perc = Math.floor(50 * x) + 0;
 
     titles.forEach(title => {
         title.style.background = `-webkit-linear-gradient(${deg}deg, #00F260 ${perc}% , #0575E6)`

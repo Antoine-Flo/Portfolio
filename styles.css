@@ -1,11 +1,6 @@
 @charset "UTF-8";
-.header {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
-}
-
 html {
+  --white-light: RGB(224,224,222);
   --background-read: hsl(50, 51%, 95%);
   --font-read: #40394a;
   --main-green: #007580;
@@ -108,14 +103,16 @@ input, select {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter";
 }
 
 .heading-1 {
+  font-family: "Poppins", sans-serif;
   font-size: 6rem;
 }
 
 .heading-2 {
+  font-family: "Inter";
   font-size: 2.4rem;
   font-weight: 200;
 }
@@ -149,49 +146,63 @@ body {
   opacity: 0.8;
 }
 
-.icons {
-  height: auto;
-  width: 20px;
-  position: absolute;
-  right: 4rem;
-  top: 0;
-}
-.icons::before {
-  margin: 0 auto;
-  display: block;
-  content: "";
-  background-color: white;
-  width: 1px;
-  height: 70px;
-  margin-bottom: 2px;
-}
-.icons__icon {
-  fill: white;
-  margin-top: 20px;
-  transition: all 0.2s;
-}
-.icons__icon:hover {
-  opacity: 0.2;
-}
-
 .header-wrapper {
   width: 100%;
-  background-color: #35363A;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #35363a;
 }
 
 .header {
   padding: 10rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__border {
+  width: 95vw;
+  height: 95vh;
+  border: 3px solid #007580;
 }
 .header__title {
-  font-family: "Comfortaa", cursive;
   font-size: 110px;
+  background: -webkit-linear-gradient(45deg, #0575e6, #00f260);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .header__bio {
-  color: white;
-  margin-top: 30px;
-  opacity: 0.65;
+  color: var(--white-light);
+  margin-top: 50px;
+}
+.header__label {
+  color: var(--white-light);
+  font-size: 18px;
+  margin-top: 100px;
+  font-weight: 200;
+}
+.header__icons {
+  margin: 20px auto;
+  display: flex;
+  width: fit-content;
+}
+.header__icons::before {
+  margin: auto 0;
+  content: "";
+  background-color: var(--white-light);
+  width: 100px;
+  height: 1px;
+}
+.header__icon {
+  fill: var(--white-light);
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+.header__icon:hover {
+  opacity: 0.2;
 }
 
 .home {
