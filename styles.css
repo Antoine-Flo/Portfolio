@@ -3,7 +3,6 @@ html {
   --white-light: RGB(224,224,222);
   --background-read: hsl(50, 51%, 95%);
   --font-read: #40394a;
-  --main-green: #007580;
   --main-light-green: #ccffbd;
 }
 
@@ -108,6 +107,7 @@ body {
 
 .heading-1 {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-size: 6rem;
 }
 
@@ -152,7 +152,7 @@ body {
   display: grid;
   align-content: center;
   justify-content: center;
-  background-color: #35363a;
+  background-color: #2D4250;
 }
 
 .header {
@@ -164,13 +164,11 @@ body {
 .header__border {
   width: 95vw;
   height: 95vh;
-  border: 3px solid #007580;
+  border: 3px solid var(--green);
 }
 .header__title {
   font-size: 110px;
-  background: -webkit-linear-gradient(45deg, #0575e6, #00f260);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--white-light);
 }
 .header__bio {
   color: var(--white-light);
@@ -196,6 +194,7 @@ body {
 }
 .header__icon {
   fill: var(--white-light);
+  cursor: pointer;
   width: 20px;
   height: 20px;
   margin-left: 20px;
@@ -225,9 +224,18 @@ body {
   top: -80px;
   left: -30px;
 }
-.home__content {
-  margin: 0 auto;
+.home__article {
+  margin: 0 auto 7rem;
   width: 700px;
+}
+.home__par {
+  margin-bottom: 2rem;
+}
+.home__list {
+  list-style: none;
+}
+.home__list-item {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

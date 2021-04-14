@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
     <script defer src="app.js"></script>
     <title>Document</title>
 </head>
@@ -26,30 +28,37 @@
                     <h1 class="header__title heading-1">&nbsp; Flouzat</h1>
                 </div>
 
-                <p class="header__bio heading-2">Développeur d'application web, entre autre.</p>
+                <p class="header__bio heading-2">Développeur d'applications web, entre autre.</p>
 
-                <p class="header__label ">J'aime aussi la photographie et le café.</p>
+                <p class="header__label ">J'aime aussi le café.</p>
 
                 <div class="header__icons">
 
-                    <div class="header__icon">
+                    <a class="header__icon" href="https://github.com/Antoine-Flo" target="_blank">
                         <svg viewBox="0 0 100 100">
                             <use xlink:href="#git" />
                         </svg>
-                    </div>
-    
-                    <div class="header__icon">
+                    </a>
+
+                    <a class="header__icon" href="https://www.linkedin.com/in/antoine-flouzat-d%C3%A9veloppeur-web/"
+                        target="_blank">
                         <svg viewBox="0 0 100 100">
                             <use xlink:href="#linkedin" />
                         </svg>
-                    </div>
-    
-                    <div class="header__icon">
+                    </a>
+
+                    <a class="header__icon">
                         <svg viewBox="0 0 100 100">
                             <use xlink:href="#enveloppe" />
                         </svg>
-                    </div>
-    
+                    </a>
+
+                    <a class="header__icon">
+                        <svg viewBox="0 0 100 100">
+                            <use xlink:href="#coffee" />
+                        </svg>
+                    </a>
+
                 </div>
 
             </header>
@@ -58,55 +67,73 @@
     <main class="home">
 
 
-        <div class="home__content">
+        <article class="home__article">
 
             <div class="home__title">
                 <h3 class="heading-3">Bienvenue sur mon portfolio</h3>
-                <p class="minutes-read">2 minutes read</p>
             </div>
             <hr>
 
-            <p class="par-1">
-                &nbsp; &nbsp;Je suis un jeune développeur indépendant et mobile basé à la campagne dans le centre de la
-                France. Je travail à la confection de sites et applications web
-                depuis 3 ans. Je me suis fait tout seul, pas à pas, je vous raconte tout ça dans <a href="#">mon
-                    parcours.</a> Je partage mon temps équitablement entre la création et l'autoformation et j'adore ça.
-                <br>
-                <br>
-
-                &nbsp; &nbsp;J'ai occupé de nombreux postes dans ma carrière, visité plus de pays encore. Mon expérience
-                m'a lentement poussé vers la programmation, comme une évidence. Aujourd'hui je cherche à intégrer une
-                équipe, pour
-                étendre encore mon savoir et surtout pour construire plus grand, pour faire une différence.
-                <br>
-                <br>
-
-                &nbsp; &nbsp;Je ne vois pas la programmation comme une démonstration technique, mais comme outil
-                d'émancipation. Je suis passionné par les théories de l'apprentissage depuis de nombreuses
-                années, et la programmation ouvre des portes inimaginables jusqu'alors pour la transmition du savoir.
-                <br>
-                <br>
-
-                &nbsp; &nbsp;J'ai travaillé bénévolement à plusieurs reprises durant mes voyages et cela m'a beacoup
-                appris. J'étudierai avec grande attention
-                toute proposition de projet à but caritatif dans le cadre associtatif, d'une ONG et en général si
-                l'objectif et d'avoir un impact positif sur notre société.
-                <br>
-                <br>
+            <p class="home__par par-1">
+                &nbsp; &nbsp;Mon profil n'est pas très académique. Je suis un jeune développeur autodidacte.
+                Je n'ai pas de bac +5 et je n'ai pas intégré de
+                bootcamp.
+                Je n'ai que ma passion et mon audace.
             </p>
-            <br>
-            <br>
+
+            <p class="home__par par-1">
+                &nbsp; &nbsp;Mais je sais, ma passion et mon audace, ça pése pas bien lourd dans un CV, alors avant de
+                vous montrer
+                mes projets, quelques arguments en ma faveur :
+
+                <ul class="home__list par-1">
+                    <li class="home__list-item">- Je maitrise l'<strong>anglais</strong> à un niveau professionnel, lu
+                        écris parlé, you name it, je fait tout en
+                        anglais</li>
+
+                    <li class="home__list-item">- J'ai ma <strong>chaine Youtube</strong> où je partage mon savoir,
+                        j'aime autant apprendre qu'enseigner</li>
+
+                    <li class="home__list-item">- Je maitrise nombre de logiciels de traitement d'images et vidéo
+                        (<strong>Photoshop, Premier
+                            pro</strong>, Lightroom)</li>
+
+                    <li class="home__list-item">- J'ai une curiosité sans limites et j'étudis tout ce qui me passe par
+                        la main relatif au
+                        développement web (regex, linux, strcuture de donné, hacking, architecture logiciel, ...)</li>
+
+                    <li class="home__list-item">- J'ai un <strong>DUT en économie</strong> : une compréhension de la
+                        relation clients/créateur et de très bonne capacités rédactionnels</li>
+
+                    <li class="home__list-item">- Je suis super souriant, et ça dans une équipe c'est quand même sympa
+                        <br><br> <strong>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</strong></li>
+                </ul>
+            </p>
+
+        </article>
+
+
+        <article class="home__article">
+
+
+            <div class="home__title">
+                <h3 class="heading-3">Et maintenant, du code</h3>
+            </div>
+            <hr>
+
+
+
+
+            <br><br><br><br><br><br>
 
             <em class="par-1 citation">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel delectus dolor reprehenderit, ex
                 fugiat distinctio, asperiores quia iure sit provident veniam nobis molestiae consequatur necessitatibus
                 placeat voluptate non maiores.
             </em>
-            <br>
-            <br>
-            <h3 class="heading-3">Mes inspirations</h3>
 
-        </div>
+
+        </article>
     </main>
 
 </body>
@@ -137,6 +164,24 @@ C63.9,15.1,49.6,0.8,32,0.8z" />
         <path d="M58.7,10.7H5.3C2.4,10.7,0,13.1,0,16v32c0,2.9,2.4,5.3,5.3,5.3h53.3c2.9,0,5.3-2.4,5.3-5.3V16C64,13.1,61.6,10.7,58.7,10.7z
 	 M52.3,16L33.1,27.7c-0.5,0.3-1.3,0.3-1.9,0L11.7,16H52.3z M5.3,48V18.4l22.9,13.9c1.1,0.8,2.4,1.1,3.7,1.1c1.3,0,2.7-0.3,3.7-1.1
 	l22.9-13.9V48H5.3z" />
+    </svg>
+
+
+    <svg version="1.1" id="coffee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+        <g>
+            <path d="M56.2,26.5c-2.1,0-4,0.8-5.4,2.1v-4c0-1.9-1.6-3.5-3.5-3.5H6.2c-1.9,0-3.5,1.6-3.5,3.5v12c0,8.3,4.8,15.8,11.5,19.5H2.7
+		c-1.6,0-2.7,1.1-2.7,2.7s1.1,2.7,2.7,2.7h48.2c1.6,0,2.7-1.1,2.7-2.7s-1.1-2.7-2.7-2.7H39.6c4.8-2.7,8.6-7.2,10.2-12.6
+		c1.3,1.9,3.7,3.2,6.2,3.2c2.1,0,4.3-0.8,5.9-2.4c1.3-1.6,2.1-3.5,2.1-5.6v-4.3C64.3,30,60.8,26.5,56.2,26.5z M45.5,37.2
+		c0,8.8-7.2,16.1-16.3,16.1h-4.3C15.5,53.3,8,45.8,8,36.4v-9.9h37.5V37.2z M58.4,40.2C57.8,40.7,57,41,56.2,41
+		c-1.3,0-2.7-1.3-2.7-2.7v-3.7c0-1.3,1.3-2.7,2.7-2.7c1.3,0,2.7,1.3,2.7,2.7v4C58.9,39.4,58.6,39.9,58.4,40.2z" />
+            <path
+                d="M13.4,15.8c1.6,0,2.7-1.1,2.7-2.7v-8c0-1.6-1.1-2.7-2.7-2.7s-2.7,1.1-2.7,2.7v8C10.7,14.7,11.8,15.8,13.4,15.8z" />
+            <path
+                d="M26.8,15.8c1.6,0,2.7-1.1,2.7-2.7v-8c0-1.6-1.1-2.7-2.7-2.7s-2.7,1.1-2.7,2.7v8C24.1,14.7,25.2,15.8,26.8,15.8z" />
+            <path
+                d="M40.2,15.8c1.6,0,2.7-1.1,2.7-2.7v-8c0-1.6-1.1-2.7-2.7-2.7c-1.6,0-2.7,1.1-2.7,2.7v8C37.5,14.7,38.6,15.8,40.2,15.8z" />
+        </g>
     </svg>
 
 
