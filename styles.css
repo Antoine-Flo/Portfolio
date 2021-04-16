@@ -229,13 +229,16 @@ body {
   width: 700px;
 }
 .home__par {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .home__list {
   list-style: none;
 }
 .home__list-item {
   margin-bottom: 1rem;
+}
+.home__img {
+  width: 700px;
 }
 
 /*# sourceMappingURL=styles.css.map */
